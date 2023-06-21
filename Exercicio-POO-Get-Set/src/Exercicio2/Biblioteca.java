@@ -6,43 +6,29 @@ public class Biblioteca {
     private int registro;
     private String autor;
 
-  /*  public Biblioteca(String genero, String nomeLivro, int registro, String autor) {
+    public Biblioteca(String genero, String nomeLivro, int registro, String autor) {
         this.genero = genero;
         this.nomeLivro = nomeLivro;
         this.registro = registro;
         this.autor = autor;
-    }*/
+    }
+
+    public Biblioteca() {}
 
     public String getGenero() {
         return genero;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
     }
 
     public String getNomeLivro() {
         return nomeLivro;
     }
 
-    public void setNomeLivro(String nomeLivro) {
-        this.nomeLivro = nomeLivro;
-    }
-
     public int getRegistro() {
         return registro;
     }
 
-    public void setRegistro(int registro) {
-        this.registro = registro;
-    }
-
     public String getAutor() {
         return autor;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
     }
 
     public void registrarLivro(int registro){
@@ -60,4 +46,11 @@ public class Biblioteca {
     public void registrarLivro(int registro, String nome, String genero,String autor){
         System.out.println("O livro foi registrado com todos os atributos");
     }
+
+    public void mostrarInformacoes(){
+        System.out.println("Gênero : "+getGenero());
+        System.out.println("Nome: "+getNomeLivro());
+        System.out.println("ISBN: "+getRegistro());
+        System.out.println("Autor: "+getAutor());
+    };
 }

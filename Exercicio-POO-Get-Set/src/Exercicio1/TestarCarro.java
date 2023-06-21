@@ -17,6 +17,7 @@ public class TestarCarro {
         renault.acelerar();
         renault.frear();
         renault.frear();
+        renault.frear();
 
         System.out.println("====================================================");
         fiat.mostrarInformacoes();
@@ -29,6 +30,8 @@ public class TestarCarro {
         hyundai.mostrarInformacoes();
         hyundai.partida();
         hyundai.acelerar();
+        hyundai.frear();
+        hyundai.frear();
         hyundai.frear();
     }
 }

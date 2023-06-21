@@ -19,8 +19,12 @@ public class Hyundai extends ICarros{
 
     @Override
     public void frear() {
-        int velocidadeFreando = this.getVelocidade() - 2;
-        this.setVelocidade(velocidadeFreando);
-        System.out.println("Freando...minha velocidade está em "+velocidadeFreando+"Km/h");
+        if(this.getVelocidade()==0){
+            System.out.println("Carro parado!");
+        } else {
+            int velocidadeFreando = this.getVelocidade() - 2;
+            this.setVelocidade(velocidadeFreando);
+            System.out.println("Freando...minha velocidade está em " + velocidadeFreando + "Km/h");
+        }
     }
 }
